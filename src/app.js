@@ -7,7 +7,7 @@ import Today from './components/Today';
 
 function App() {
       const [covid , setcovid] = useState({});
-        fetch('https://api.covid19india.org/')
+        fetch('https://api.covid19india.org/data.json')
         .then(res => res.json())
         .then(data => setcovid(data.statewise[0]));
 
