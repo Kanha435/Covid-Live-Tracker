@@ -3,7 +3,8 @@
   margin: 0px;
   padding: 0;
   font-family: 'Roboto Mono', monospace;
-
+  text-decoration: none;
+  list-style: none;
 }
 body{
   width: 100%;
@@ -32,7 +33,9 @@ body{
 .card_cont:hover{
   transform: scale(1.05);
   text-shadow: 0 1px 3px #888787, 0 1px 7px #383737 ;
-  color: rgb(209, 208, 208);
+  color: rgb(218, 216, 216);
+  box-shadow: rgba(245, 245, 245, 0.493) 0px 0.2px 4px 0px inset;
+
 }
 .live_container{
   display: flex;
@@ -72,10 +75,60 @@ body{
   padding-top: 50px;
   padding-bottom: 20px;
   font-size: 20px;
-  text-shadow: 0 1px 3px #f1ebeb, 0 1px 5px #383737 ;
-
+  text-shadow: 0 1px 3px #f1ebeb, 0 1px 5px #383737;
+}
+.contact{
+  display: flex;
+  justify-content: center;
+}
+.contact li{
+  box-shadow: rgba(29, 28, 28, 0.493) 2px 2px 4px 0px inset;
+  border: 1px solid #383737 ;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin: 25px 5px;
+  background-color:#383737  ;
+}
+.contact li:hover{
+  transform: scale(1.05);
+  box-shadow: rgba(255, 255, 255, 0.493) 2px 2px 4px 0px inset;
+  text-shadow: 0 1px 3px #888787, 0 1px 7px #383737 ;
+  color: rgb(209, 208, 208);
+}
+.contact li a{
+  font-size: 25px;
+  color:#232526;
 }
 
+.covid{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+.covid h2{
+  font-size: 40px;
+  color: #232526;
+  text-shadow: 0 1px 3px #888787, 0 1px 7px #383737 ;
+
+}
+.covid span{
+  font-size: 80px;
+  color: rgb(175, 166, 166);
+  animation: rotate 15s infinite;
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(360deg) ;
+  }
+  50%{
+    transform: rotate(180deg) }
+  100%{
+    transform: rotate(360deg);
+  }
+}
 
 /* mobile size */
 @media only screen and (max-device-width: 480px) {
